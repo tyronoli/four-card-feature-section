@@ -89,13 +89,6 @@ body {
     border-top-color: hsl(212, 86%, 64%);
 }
 
-.card p {
-    font-size: 1em;
-    color: hsl(212, 6%, 44%);
-    line-height: 1.6;
-
-}
-
 .sub-container {
     display: flex;
     align-items: center;
@@ -120,4 +113,94 @@ img {
 h1 {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.card p {
+    font-size: 1em;
+    color: hsl(212, 6%, 44%);
+    line-height: 1.6;
+
+}
+
+/* mobile view */
+
+@media (max-width:1000px) {
+    body {
+        padding: 0%;
+    }
+
+    .container .card-container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:680px) {
+    body {
+        padding: 0%;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .container .card-container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:375px) {
+    body {
+        padding: 0%;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .container .card-container {
+        flex-direction: column;
+    }
+
+    .header {
+        max-width: 300px;
+    }
+
+    .header .text-1 {
+        font-size: 1.5em;
+        font-weight: 200;
+        color: hsla(234, 12%, 34%, .7);
+    }
+
+    .header .text-2 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .header .text-3 {
+        font-size: .9em;
+        font-weight: lighter;
+        margin-top: 1.5em;
+        color: hsl(212, 6%, 44%);
+        line-height: 1.6;
+
+    }
+
+    .card {
+        padding: 1.5em;
+    }
+
+    h1 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .card p {
+        font-size: .8em;
+        color: hsl(212, 6%, 44%);
+        line-height: 1.6;
+
+    }
+
 }
